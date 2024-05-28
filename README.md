@@ -1,4 +1,5 @@
 # docker-webserver
+## Menjalankan webserver secara terisolasi dengan docker
 1. Pastikan docker sudah terinstall di server
 2. buat directory difolder mana saja, dengan nama bebas ```mkdir docker-webserver```
 3. masuk ke directory yang baru saja anda buat ```cd docker-webserver```
@@ -14,3 +15,7 @@
    ```
 6. simpan file tersebut dengan menekan tombol CTRL+O dan keluar dari text editor nano dengan menekan tombol CTRL+X
 7. jalankan file Dockerfile untuk membuat images dengan ```docker-build -t webserver:1.0 .```
+8. Setelah image terbuat. maka buat container dengan script
+   ```
+   docker run -d 
+   ```
